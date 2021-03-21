@@ -1,0 +1,500 @@
+
+/* Globals */
+:root{
+    /* Colors */
+    /* Primary */
+    --veryDarkBlue: hsl(243, 87%, 12%);
+    --desaturatedBlue: hsl(238, 22%, 44%);
+
+    /* Accent */
+    --brightBlue: hsl(224, 93%, 58%);
+    --moderateCyan: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    --lightGrayishBlue: hsl(240, 35%, 98%);
+    --lightGray: hsl(0, 0%, 75%);
+
+    /* Fonts */
+    /*  Headings, Call-to-actions, Header Navigation*/
+    --fontRaleway: 'Raleway', sans-serif;
+
+    /* Body */
+    --fontOpenSans: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+body{
+    font-family: var(--fontOpenSans);
+}
+.wrapper{
+    width: 100%;
+    padding: 2em;
+    /* max-width: 1110px; */
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: var(--fontRaleway);
+}
+
+/* Header */
+.header .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    width: 80px;
+}
+
+.header-menu li{
+    float: left;
+    margin-left: 1em;
+    list-style: none;
+    
+}
+.header-menu li a{
+    text-decoration: none;
+    font-size: .8em;
+    color: var(--veryDarkBlue);
+    
+}
+/* Hero */
+.hero-img{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+/* hero sign in */
+.hero-sign-in{
+    text-align: center;
+}
+.hero-sign-in-title{
+    margin-top: 1em;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.hero-sign-in-text{
+    margin-top: 1em;
+    font-size: .95em;
+    line-height: 1.5;
+}
+/* Hero form */
+.hero-sign-in-form{
+    margin-top: 2em;
+}
+.hero-sign-in-form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid var(--veryDarkBlue);
+    /* margin-bottom: 10px; */
+    font-weight: lighter;
+    padding-left: 1em;    
+}
+.hero-sign-in-form input:first-child{
+    margin-bottom: 1.2em;
+}
+.hero-sign-in-form input::placeholder{   
+    color: #b2b2b2;
+}
+.hero-sign-in-form input[type="submit"]{
+    background: var(--brightBlue);
+    color: white;
+    font-weight: 700;
+    border: none;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.hero-sign-in-form input[type="submit"]:hover{
+    opacity: .7;
+}
+/* stay productive */
+.stay-productive{
+    background: var(--lightGrayishBlue);
+    margin-top: 6em;
+    padding-bottom: 4em;
+}
+.stay-productive .wrapper{
+    display: grid;
+    /* grid-template-rows: auto auto; */
+    grid-row-gap: 6em;
+}
+.bg-curve-stay-productive{
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: -50px;
+    background-image: url("images/bg-curve-mobile.svg");
+    background-position: top;
+    background-size: cover;
+    z-index: 1000;
+}
+.stay-productive-intro{
+    width: 100%;
+    /* display: none; */
+}
+.stay-productive-title{
+    font-size: 1.1em;
+    text-align: center;
+}
+.stay-productive-info-texts{
+    margin-top: 1.5em;
+}
+.stay-productive-text{
+    font-size: .83em;
+    margin-top: 1em;
+    color: var(--desaturatedBlue);
+}
+.stay-productive-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid var(--moderateCyan);
+    font-size: .8em;
+    padding: .5em 0em;
+    color: var(--moderateCyan);
+    font-weight: bolder;
+}
+
+/* Stay productive testimonials */
+.stay-productive-info-testimonials{
+    margin: auto;
+    width: 280px;
+    background: white;
+    padding: 1.5em;
+    margin-top: 2em;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.stay-productive-info-testimonials-text{
+    font-size: .65em;
+    line-height: 1.7;
+}
+.stay-productive-info-testimonials-user{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+.stay-productive-info-testimonials-user-profile{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.stay-productive-info-testimonials-user-name-profession{
+    margin-left: .7em;
+}
+.stay-productive-info-testimonials-user-name{
+    font-weight: bolder;
+    font-size: .63em;
+}
+.stay-productive-info-testimonials-user-profession{
+    font-size: .45em;
+}
+.stay-productive-link:hover{
+    opacity: .6;
+}
+/* Sign in */
+.sign-in{
+    background: var(--desaturatedBlue);
+    padding: 1.5em 0 3em 0;
+}
+.sign-in-title{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+.sign-in-text{
+    text-align: center;
+    color: white;
+    margin-top: 1.5em;
+    font-size: .95em;
+    line-height: 1.6;
+}
+/* Sign in form */
+.sign-in-form{
+    margin-top: 1.5em;
+}
+.sign-in-form input{
+    margin: auto;
+    display: block;
+    width: 250px;
+    height: 35px;
+    font-size: .75em;
+    border: none;
+}
+.sign-in-form input[type="text"]{ 
+    padding-left: 1em;
+    font-weight: 400;
+}
+.sign-in-form input[type="text"]::placeholder{
+    color: #c2c2c2;
+}
+.sign-in-form input[type="submit"]{
+    margin-top: .6em;
+    background-color: white;
+    background-color: var(--brightBlue);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sign-in-form input[type="submit"]:hover{
+    opacity: .7;
+}
+/* Footer */
+footer{
+    background: var(--veryDarkBlue);
+    color: white;
+}
+footer li{
+    list-style: none;
+}
+
+/* Footer table */
+footer{
+    padding: 2em 0 ;
+}
+
+.footer-table{
+    margin-top: 1.5em;
+    border-collapse: separate;
+    border-spacing: 1em;
+    position: relative;
+    left: -1em;
+}
+.footer-links{
+    margin-top: 2.5em;
+}
+.footer-links{
+    display: grid;
+    font-size: 1.1em;
+    grid-row-gap: 1.2em;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;  
+}
+.footer-links li:nth-child(5){
+    margin-top: 2em;
+}
+
+/* Footer social */
+.footer-social{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.footer-social li{
+    margin: 0 .5em;
+}
+.footer-social li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+}
+
+/* Media querys */
+@media screen and (min-width: 800px){
+  
+    .wrapper{
+        max-width: 600px;
+    }
+
+    .stay-productive-intro{
+        width: 400px;
+        margin: auto;
+    }    
+    .bg-curve-stay-productive{
+        background-image: url("images/bg-curve-desktop.svg");
+        height: 100px;
+        top: -100px;
+    }
+}
+@media screen and (min-width: 1440px){
+
+    .wrapper{
+        max-width: 1290px;
+        padding: 0;
+    }
+    /* Header */
+    .header{
+        height: 160px;
+    }
+    .header .wrapper{
+        height: 100%;
+        align-items: center;
+    }
+    .header-logo{
+        width: 160px;
+        height: 45px;
+    }
+    .header-menu li{
+        margin-left: 3.4em;
+    }
+    .header-menu li a{
+        font-size: 1em;
+    }
+    /* Hero */
+    .hero .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 640px;
+        grid-gap: 3.4em;
+    }
+    .hero-img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    .hero-sign-in{
+        text-align: left;
+    }
+    .hero-sign-in-title{
+        font-size: 2.5em;
+        line-height: 1.3;
+    }
+    .hero-sign-in-text{
+        font-size: 1.14em;
+        font-weight: bolder;
+    }
+
+    .hero-sign-in-form input{
+        height: 45px;
+    }
+    .hero-sign-in-form input[type="text"]{
+        width: 320px;
+        margin-right: 1em;
+    }
+    .hero-sign-in-form input[type="submit"]{
+        width: 200px;
+    }
+    
+    /* Stay productive */
+    .stay-productive{
+        margin-top: 15em;
+        padding-bottom: 5em;
+    }
+    .stay-productive .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 540px;
+        grid-gap: 3.75em;
+    }
+    .bg-curve-stay-productive{
+        background-image: url("images/bg-curve-desktop.svg");
+    }
+    .stay-productive-info{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .stay-productive-intro{
+        width: 540px;
+    }
+    .stay-productive-title{
+        text-align: left;
+        font-size: 2.5em;
+     
+    }
+    .stay-productive-text{
+        text-align: left;
+        font-weight: bolder;
+        font-size: 1em;
+        width: 530px;
+    }
+    .stay-productive-link{
+        margin: initial;
+        width: 175px;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    
+    .stay-productive-info-testimonials{
+        margin: initial;
+    }
+    
+    .stay-productive-info-testimonials{
+        margin-top: 2.5em;
+    }
+    .stay-productive-info-texts{
+        margin-top: 1.4em;
+    }
+    /* Testimonials */
+    .stay-productive-info-testimonials{
+        width: 360px;
+    }
+    .stay-productive-info-testimonials-text{
+        font-size: .9em;
+    }
+
+    /* Sign in */
+    .sign-in{
+        padding: 5.5em 0;
+    }
+    .sign-in .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 550px;
+    }
+    .sign-in-title{
+        text-align: left;
+        font-size: 2em;
+    }
+    .sign-in-text{
+        text-align: left;
+        width: 516px;
+        font-size: 1.05em;
+    }
+    .sign-in-form{
+        width: 480px;
+        place-self: center;
+    }
+    .sign-in-form input{
+        height: 50px;
+    }
+    .sign-in-form input[type=text]{
+        width: 100%;
+        padding-left: 1.5em;
+    }
+    .sign-in-form input[type="submit"]{
+        display: inline-block;
+        width: 200px;
+        margin-top: 1em;
+    }
+    /* Footer */
+    footer{
+        padding: 6.25em 0;
+    }
+    .footer-main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 4em;
+    }
+    .footer-links{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: column;
+    }
+    .footer-links li:nth-child(5){
+        margin: initial;
+    }
+    .footer-social, .footer-links, .footer-table{margin-top: 0;}
+    .footer-table{
+        top: -1.5em;
+    }
+}
